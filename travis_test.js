@@ -6,8 +6,8 @@ var capabilities = {
  'device' : 'iPhone 7',
  'realMobile' : 'true',
  'os_version' : '10.3',
- 'browserstack.user' : 'abhishekmordani2',
- 'browserstack.key' : 'yNdm9XxyX7esbsk4Uqg6'
+ 'browserstack.user' : process.env.BROWSERSTACK_USERNAME,
+ 'browserstack.key' : process.env.BROWSERSTACK_ACCESS_KEY
 }
 
 var driver = new webdriver.Builder().
